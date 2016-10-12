@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		div{
+			display: inline-block;
+			position: relative;
+		}
+		input{
+			opacity: 0;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100px;
+			z-index: 9;
+			/*width: 0;
+			font-size: 0;
+			height: 0;*/
+		}
+		a{
+			font-size: 16px;
+			line-height: 1.7;
+			padding: 4px 10px;
+			border-radius: 3px solid #000;
+			background-color: lightblue;
+		}
+		input[type="file" i] {
+    -webkit-appearance: initial;
+    padding: initial;
+    background-color: initial;
+    border: initial;
+}
+
+	</style>
+</head>
+<body>
+	<div>
+		<input type="file">
+		<a href="javascript:;">选择图片</a>
+	</div>
+<p>使用技巧，将opacity设置为0，再新建标签，设置按钮样式，将input覆盖在a上</p>
+</body>
+</html>
